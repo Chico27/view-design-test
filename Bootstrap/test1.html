@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+
+    <input type="checkbox" checked data-toggle="toggle">
+
+    <!-- Rectangular switch -->
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider">テスト</span>
+</label>
+
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+
+    <input id="toggle-one" checked type="checkbox">
+<script>
+  $(function() {
+    $('#toggle-one').bootstrapToggle();
+  })
+</script>
+
+  </body>
+</html>
